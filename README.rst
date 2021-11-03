@@ -16,12 +16,10 @@ Install wrapc in a virtualenv using the following command:
 
 ::
 
- python3 -m venv ~/venv/wrapc
- . ~/venv/wrapc/bin/activate
- pip install git+https://github.com/meeuw/wrapc
- cd ~/venv/wrapc/bin
- ln -s wrapc myclic
- ln -s wrapc mysqlc
+ pip install wrapc
+ cd ~/bin
+ ln -s `which wrapc` myclic
+ ln -s `which wrapc` mysqlc
 
 Create the configuration file ``~/.wrapcrc`` with the following contents:
 

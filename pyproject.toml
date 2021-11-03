@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "wrapc"
+version = "0.0.2"
+description = "Wrapper script for starting a command line tool with bash completion"
+authors = ["Dick Marinus"]
+license = "GPL-3"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+argcomplete = "^1.12.3"
+argparse = "^1.4.0"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+wrapc = 'wrapc:main'
